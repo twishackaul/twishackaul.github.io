@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(9, 161, 243);
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    padding: 10px 1px; 
+    align-items: center;
+    position: sticky;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;  
+    width: 101px;
+    display: block;
+    text-align: center;
+    background: rgb(9, 161, 243);
+    color: white;
+    padding: 10px 1px;
+    
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+.nav-links a:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 1px;
+    display: block;
+}
+
+.cart-page{
+    margin: 100px auto;
+    padding: 0 200px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: rgb(9, 161, 243);
+    font-weight: bold;
+}
+td{
+    padding: 10px 5px;
+    font-size: 18px;
+}
+td input{
+    width: 40px;
+    height:30px;
+    padding: 5px;
+}
+td a{
+    color: rgb(9, 161, 243);
+    font-size: 14px;
+}
+td img{
+    width: 140px;
+    height: 140px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid rgb(9, 161, 243);
+    width: 100%;
+    max-width: 260px;
+}
+.col-2{
+    text-align: end;
+}
+.btn{
+    display: inline-block;
+    background: rgb(9, 161, 243);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+
+}

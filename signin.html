@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Signin Form Design</title>
+      <link rel="stylesheet" type ="text/css" href="style2.css">
+    </head>
+<body>
+      <section class="header"> 
+        <nav>
+        <div class="nav-links">
+                <i class="fa fa-times"></i> 
+                <ul>
+                    <li><a href="https://gorika.000webhostapp.com/">HOME</a></li>
+                    
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="ContactUs.html">CONTACT US</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"></i>
+            
+        </nav>
+      </section>
+        <div class =" signinbox">
+              <h2>Sign Up Here</h2>
+              <form  action ="order1.html" method="post" name="google-sheet" >
+                <p>Name</p>
+                <input type="text" name="Name" class="form-control" placeholder="Enter Name" id="name" />
+                <br><br>
+                <p>Username</p>
+                <input type="text" name="Username" class="form-control" placeholder="Enter Username" id="username" />
+                
+                <br><br>
+                <p>Password</p>
+                <input type="Create Password" name="Password" class="form-control" placeholder="Create Password" id="password" />
+                
+                <br><br>
+                <p>Email Id</p>
+                <input type="text" name="Email" class="form-control" placeholder="Enter Email Id" id="email" />
+                
+                <br><br>
+                <p>Phone Number</p>
+                <input type="text" name="Number" class="form-control" placeholder="Enter Phone Number" id="number" />
+                
+                <br><br> 
+                <input type="Submit" name="" value="Sign in">
+                <a href="login.html">Already have an account?</a>
+              </form>
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyHgzyqaQ2G6cNyHQi2SX6qB0mKDlExkp9Wqu4Xvg8HA4NYtLa5V_fuS_qZ0cV_LME1DA/exec'
+                const form = document.forms['google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("You are successfully Signed in"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>     
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    <section class="sm">
+                <h5>SOCIAL MEDIA</h5>
+            
+                <div class="smi">
+                    <a href="https://www.instagram.com/dairy__magic/"><img src="icons8-instagram.gif"></a>
+                </div>
+            
+                <div class="smi">
+                    <a href=""><img src="icons8-linkedin-circled.gif"></a>
+                </div>
+            
+                <div class="smi">
+                    <a href="https://twitter.com/MagicDairy?t=yxegBqKjOJ_jJXO1XUHxVQ&s=09"><img src="icons8-twitter.gif"></a>
+                </div>
+            
+            </section>
+
+
+</body>
+</html>

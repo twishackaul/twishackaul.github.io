@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin: 0;
+    background: #fff;
+    min-height: 100vh;
+    width: 99.8%;   
+    background-image: url(bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+nav{
+    background: rgb(9, 161, 243);
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    padding: 10px 1px; 
+    align-items: center;
+    position: sticky;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+.nav-links ul li a{
+    text-decoration: none;  
+    width: 99px;
+    display: block;
+    text-align: center;
+    background: rgb(9, 161, 243);
+    color: white;
+    padding: 10px 1px;
+    
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+.nav-links a:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 1px;
+    display: block;
+}
+.logo{
+    padding: 0px 20px;
+}
+.logo img{
+    width: 50%;
+}
+.text-box{
+    width: 90%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    line-height: 110px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+}
+.gets{
+    display: inline;
+    cursor: pointer;
+}
+
+.gets img{
+    width: 190px;
+}
+
+.About us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+   
+}
+h3{
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.row1{
+    margin-top: 5%;
+    display: inline-block;
+    justify-content: space-between;
+    text-align:center;
+   
+}
+.About us{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+H2{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 80px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 0px;
+}
+.about-us{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.about-us img{
+    width: 80%;
+    display: inline;
+    padding: 30px;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #fff;
+}
+.layer H1{
+    width: 100%;
+    font-weight: 500;
+    color: blue;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover H1{
+    bottom: 49%;
+    opacity: 1;
+}
+.products{
+    flex-basis: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+}
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+}
+.producti{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 390px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+
+}
+.producti img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 36px;
+    
+}
+h4{
+    text-align:center;
+    font-size: 24px;
+}
+p1{
+    text-align:end;
+    font-size: 20px ;
+}
+.sm{
+    text-align: center;
+    line-height: 50px;
+}
+.smi{
+    line-height: 30px;
+    padding: 5px;
+    display: inline;
+}
+.sm img{
+    width: 30px;
+}
+

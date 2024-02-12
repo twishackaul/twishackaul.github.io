@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(9, 161, 243);
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    padding: 10px 1px; 
+    align-items: center;
+    position: sticky;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;  
+    width: 101px;
+    display: block;
+    text-align: center;
+    background: rgb(9, 161, 243);
+    color: white;
+    padding: 10px 1px;
+    
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+.nav-links a:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 1px;
+    display: block;
+}
+body{
+    margin: 0;  
+    padding: 0;  
+    background-color:#fff; 
+}
+.title{
+    font-size: 30px;
+    margin: 20px 0px;
+    text-align: center;
+}
+.accordion{
+    max-width: 800px;
+    margin: 1rem auto;
+}
+.ques{
+    position: relative;
+    margin: 1rem 0;
+    font-style: italic;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 black;
+}
+.label{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    background: rgb(34, 168, 241);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    align-items: center;
+    font-style: normal;
+}
+.label.active::after{
+    content: '-';
+}
+.label::after{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.label.active::after{
+    content: '-';
+}
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-style: normal;
+}
+.inside{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, blue, transparent, rgb(97, 183, 244), transparent)1;
+}
+.label.active + .content{
+    max-height: 100px;
+}
+.sm{
+    text-align: center;
+    line-height: 50px;
+}
+.smi{
+    line-height: 30px;
+    padding: 5px;
+    display: inline;
+}
+.sm img{
+    width: 30px;
+}
